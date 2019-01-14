@@ -65,22 +65,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 800px) {
     .container {
-        max-width: 100%;
-        align-content: center;
+        width: 100%;
+        
              
     }
 }
 
 @media only screen and (max-width: 500px) {
     .container {
-        max-width: 100%; 
-        align-content: center; 
+        width: 100%; 
+        
          
     }
 }
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
+    width: 60%;
     display: flex;
 }
 
@@ -106,15 +106,15 @@ header nav a {
 
 @media only screen and (max-width: 800px) {
     header nav a {
-        max-width: 100%; 
-        align-content: center;      
+        width: 100%; 
+              
     }
 }
 
 @media only screen and (max-width: 500px) {
     header nav a {
-        max-width: 100%; 
-        align-content: center;         
+        width: 100%; 
+                
     }
 }
 
@@ -129,14 +129,14 @@ header .logo {
 
 @media only screen and (max-width: 800px) {
     header .logo {
-        max-width: 100%; 
-        align-content: center;      
+        width: 100%; 
+             
     }
 }
 @media only screen and (max-width: 500px) {
     header .logo {
-        max-width: 100%; 
-        align-content: center;       
+        width: 100%; 
+            
     }
 }
 
