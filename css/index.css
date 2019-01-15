@@ -65,15 +65,20 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    align-items: center;
+    justify-content: center;    
 }
 
 /* Header Styles */
 
 header {
-    width: 60%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav {
@@ -146,6 +151,15 @@ header .logo {
         width: 100%;
         /* display: flex;        
         justify-content: center; */
+    }
+    section .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: left;       
+        align-self: flex-start;
+       
     }      
 }
 @media only screen and (max-width: 500px) {
@@ -236,7 +250,9 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cta .cta-text {
@@ -274,19 +290,35 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .main-content .top-content {
-    display: flex;
+    width: 80%;
+    margin: auto;    
+    display: flex;    
+    justify-content: center;
+    padding: 10px;
+}
+.main-content .top-content .text-content {
+    padding: 10px;
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 80%;
 }
 
 .main-content .bottom-content {
     display: flex;
+    width: 80%;
+    margin: auto;         
+    justify-content: center;
+    padding: 20px;
 }
 
 .main-content .bottom-content p {
@@ -294,14 +326,28 @@ header .logo {
 }
 
 /* Contact Styles */
+.contact {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: left;
+    margin-left: 150px;
+    align-self: flex-start;
+    
+
+}
 
 .contact p {
-    margin: 15px 0;
+    margin: 15px 0; 
+     
+    
 }
 
 /* Footer Styles */
 
-footer {
+footer {    
     text-align: center;
     margin: 40px 0 20px;
 }
